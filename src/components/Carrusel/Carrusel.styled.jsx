@@ -11,8 +11,9 @@ export const Carrusel = styled.div`
   }
 
   .container-novios {
-    padding: .8rem;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+      padding: 1rem;
+      margin-left: -7px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
   }
 
   .container-novios:hover {
@@ -51,7 +52,7 @@ export const Carrusel = styled.div`
     border-radius: 50%;
     width: 40px;
     height: 40px;
-    display: flex !important;
+    display: none !important;
     justify-content: center;
     align-items: center;
     cursor: pointer;
@@ -74,15 +75,15 @@ export const Carrusel = styled.div`
   }
 
   /* Ocultar flechas en mobile */
-  @media (max-width: 768px) {
+  @media (min-width: 768px) {
     .slick-arrow {
-      display: none !important;
+      display: flex !important;
     }
 
-    .container-novios {
-      padding: 1rem;
-      margin-left: -7px;
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
+  .container-novios {
+    padding: .8rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-left: 0px;
   }
 
   }
