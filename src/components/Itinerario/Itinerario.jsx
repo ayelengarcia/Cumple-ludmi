@@ -22,9 +22,9 @@ const itinerario = () => {
           className="d-flex flex-column justify-content-center align-items-center"
         >
 
-          <div className="container-itinerario">
+          <div className="container-itinerario mt-4">
             <img src="/assets/Itinerario.gif" alt="Itinerario" className="logo mb-0" />
-            <p className="text mt-5 mb-3">ITINERARIO</p>
+            <p className="text m-0">ITINERARIO</p>
           </div>
           <br />
 

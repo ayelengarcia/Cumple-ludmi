@@ -13,14 +13,19 @@ export const Itinerario = styled.div`
     padding: 0px;
   }
 
-
   .container-itinerario{
     width: 100%;
     display: flex;
     position: relative;
-    left: -30px;
+    left: -15px;
+    justify-content: center;
+    align-items: center;
   }
 
+  .logo{
+   width: 70px;
+   height: 70px;
+  }
 
   .text {
     font-size: 1.2rem;
@@ -44,5 +49,13 @@ export const Itinerario = styled.div`
   }
 
   @media (min-width: 769px) {
+  .container-itinerario{
+    left: -30px;
+  }
+
+  .logo{
+   width: auto;
+   height: auto;
+  }
   }
 `;

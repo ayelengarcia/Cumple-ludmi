@@ -13,13 +13,13 @@ export const Frase = styled.div`
   }
 
   .texto {
-    font-size: 1rem;
+    font-size: .9rem;
     letter-spacing: 2px;
     margin: 0;
   }
   
   .text-2 {
-    font-size: 1.1rem;
+    font-size: 1rem;
     letter-spacing: 2px;
   }
 
@@ -31,5 +31,16 @@ export const Frase = styled.div`
     .img_fecha {
       width: 18rem;
     }
+
+    .texto {
+    font-size: 1rem;
+    letter-spacing: 2px;
+    margin: 0;
+  }
+  
+  .text-2 {
+    font-size: 1.1rem;
+    letter-spacing: 2px;
+  }
   }
 `;

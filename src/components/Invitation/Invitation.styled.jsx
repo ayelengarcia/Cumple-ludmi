@@ -17,7 +17,7 @@ export const Invitation = styled.div`
   } 
 
   .texto {
-    font-size: 1rem;
+    font-size: .9rem;
     letter-spacing: 2px;
     margin: 0;
   }
@@ -36,5 +36,11 @@ export const Invitation = styled.div`
     .img_fecha {
       width: 18rem;
     }
+
+    .texto {
+    font-size: 1rem;
+    letter-spacing: 2px;
+    margin: 0;
+  }
   }
 `;

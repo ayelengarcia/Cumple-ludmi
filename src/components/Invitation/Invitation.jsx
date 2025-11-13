@@ -19,8 +19,8 @@ const certificate = () => {
           data-aos-offset="50"
         >
 
-          <p className="texto mt-1">¡DICEN QUE LOS 30!</p>
-          <p className="texto">SON LOS NUEVOS 20... PERO CON</p>
+          <p className="texto mt-1">DICEN QUE LOS 30 SON</p>
+          <p className="texto">LOS NUEVOS 20... PERO CON</p>
           <p className="texto">MÁS ONDA Y MENOS RESACA,</p>
           <p className="texto">¡TE ESPERO PARA BRINDAR!</p>
 

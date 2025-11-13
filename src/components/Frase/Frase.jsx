@@ -22,8 +22,8 @@ const frase = () => {
           <p className="text-2 mb-0">¡ESTÁS INVITADX A MIS</p>
           <img src="/assets/no30.gif" alt="no30" className="logo mb-3"/>
           
-          <p className="texto ">Sí, llegué al tercer escalón</p>
-          <p className="texto">y quiero festejarlo con vos mooor!</p>
+          <p className="texto ">Sí, llegué al tercer escalón y</p>
+          <p className="texto">quiero festejarlo con vos mooor!</p>
 
         </div>
       </div>

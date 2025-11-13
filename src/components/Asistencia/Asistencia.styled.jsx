@@ -12,8 +12,8 @@ export const Asistencia = styled.div`
   }
 
   .texto {
-    font-size: 1rem;
-    letter-spacing: 2px;
+    font-size: .9rem;
+    letter-spacing: 1.5px;
     font-weight: 600;
   }
 

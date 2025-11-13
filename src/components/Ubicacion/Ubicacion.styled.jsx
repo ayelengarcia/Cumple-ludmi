@@ -21,8 +21,8 @@ export const Ubicacion = styled.div`
   }
 
   .text-2 {
-    font-size: 1rem;
-    letter-spacing: 2px;
+    font-size: .9rem;
+    letter-spacing: 1px;
     color: #ff66c4;
     font-weight: 600;
   }
@@ -53,5 +53,12 @@ export const Ubicacion = styled.div`
   }
 
   @media (min-width: 769px) {
+
+  .text-2 {
+    font-size: 1rem;
+    letter-spacing: 2px;
+    color: #ff66c4;
+    font-weight: 600;
+  }
   }
 `;

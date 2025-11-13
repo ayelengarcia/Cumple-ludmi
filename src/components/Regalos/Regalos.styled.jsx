@@ -20,7 +20,7 @@ export const Regalos = styled.div`
   }
 
   .text-2 {
-    font-size: 1rem;
+    font-size: .9rem;
     letter-spacing: 2px;
     color: #545454;
     font-weight: 400;
@@ -126,5 +126,11 @@ export const Regalos = styled.div`
       transform: scale(1);
       opacity: 1;
     }
+  }
+
+ @media (min-width: 769px) {
+  .text-2 {
+    font-size: 1rem;
+  }
   }
 `;

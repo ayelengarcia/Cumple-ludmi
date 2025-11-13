@@ -23,7 +23,7 @@ const ubicacion = () => {
           className="ubica d-flex flex-column justify-content-center align-items-center"
         >
           <p className="text-4 mt-3 mb-3">¿DÓNDE?</p>
-          <p className="text-2 m-0"> <i className="bi bi-geo-alt-fill"> </i>QUINTA - LA SONIA HURLINGAM.</p>
+          <p className="text-2 m-0"> <i className="bi bi-geo-alt-fill"> </i>QUINTA LA SONIA - HURLINGAM</p>
           <p className="text-3 m-0"> Calle Falsa 123, Barrio Nuevo.</p>
 
           <p className="text-4 mt-5 mb-3">¿CÓMO LLEGAR?</p>
