@@ -1,11 +1,11 @@
+import { useState, useEffect } from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
-import { Carrusel } from "../Carrusel/Carrusel.styled";
+import { Carrusel } from "./Carrusel.styled";
 
 const Carrousel = () => {
-
   // eslint-disable-next-line react/prop-types
   const PrevArrow = ({ onClick }) => (
     <div className="slick-arrow arrow-prev" onClick={onClick}>
@@ -20,11 +20,26 @@ const Carrousel = () => {
     </div>
   );
 
+  // Estado dinámico según tamaño de pantalla
+  const [slidesToShow, setSlidesToShow] = useState(3);
+
+  useEffect(() => {
+    const updateSlides = () => {
+      if (window.innerWidth <= 769) setSlidesToShow(1);
+      else if (window.innerWidth <= 1200) setSlidesToShow(2);
+      else setSlidesToShow(3);
+    };
+
+    updateSlides(); // Detecta al cargar
+    window.addEventListener("resize", updateSlides);
+    return () => window.removeEventListener("resize", updateSlides);
+  }, []);
+
   const settings = {
     dots: true,
     infinite: true,
     speed: 500,
-    slidesToShow: 3,        // Por defecto Desktop
+    slidesToShow,
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 2500,
@@ -32,14 +47,14 @@ const Carrousel = () => {
     nextArrow: <NextArrow />,
     responsive: [
       {
-        breakpoint: 1200,   // <= 1100px → Tablet
+        breakpoint: 1200, // <= 1200px → Tablet
         settings: {
           slidesToShow: 2,
           slidesToScroll: 1,
         },
       },
       {
-        breakpoint: 769,    // <= 769px → Mobile
+        breakpoint: 769, // <= 769px → Mobile
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
@@ -48,24 +63,9 @@ const Carrousel = () => {
     ],
   };
 
-
-
   return (
     <Carrusel>
       <Slider {...settings} className="m-0 mb-4 px-0">
-
-          <div className="container-novios">
-            <img src="/assets/foto4.jpg" alt="Logo" className="novios" />
-          </div>
-
-          <div className="container-novios">
-            <img src="/assets/foto5.jpg" alt="Logo" className="novios" />
-          </div>
-
-          <div className="container-novios">
-            <img src="/assets/foto6.jpg" alt="Logo" className="novios" />
-        </div>
-        
         <div className="container-novios">
           <img src="/assets/foto4.jpg" alt="Logo" className="novios" />
         </div>
@@ -77,7 +77,18 @@ const Carrousel = () => {
         <div className="container-novios">
           <img src="/assets/foto6.jpg" alt="Logo" className="novios" />
         </div>
-     
+
+        <div className="container-novios">
+          <img src="/assets/foto4.jpg" alt="Logo" className="novios" />
+        </div>
+
+        <div className="container-novios">
+          <img src="/assets/foto5.jpg" alt="Logo" className="novios" />
+        </div>
+
+        <div className="container-novios">
+          <img src="/assets/foto6.jpg" alt="Logo" className="novios" />
+        </div>
       </Slider>
     </Carrusel>
   );
